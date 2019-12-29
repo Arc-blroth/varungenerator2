@@ -1,0 +1,28 @@
+{
+  "name": "varungenerator2",
+  "version": "1.0.0",
+  "description": "A website that generates alliterative adjectives for nefarious nouns. Inspired by a teammate from Hermit Social Club.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arc-blroth/varungenerator2.git"
+  },
+  "keywords": [
+    "nltk",
+    "express",
+    "varun",
+    "alliteration"
+  ],
+  "author": "Arcblroth",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Arc-blroth/varungenerator2/issues"
+  },
+  "homepage": "https://github.com/Arc-blroth/varungenerator2#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

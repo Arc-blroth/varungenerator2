@@ -30,12 +30,16 @@ function generate() {
 	request.send(JSON.stringify({"in": toSend}));
 }
 
-document.getElementById("wordnetCite").addEventListener("click", function() {
-	wordnetCitation();
-});
+function nltkCitation() {
+	alert(`Bird, Steven, Edward Loper and Ewan Klein (2009).\nNatural Language Processing with Python.  O'Reilly Media Inc.`);
+}
 
 function wordnetCitation() {
 	alert(`Princeton University "About WordNet." Wordnet. Princeton University. 2010.`);
 }
+
+document.getElementById("nltkCite").addEventListener("click", nltkCitation);
+
+document.getElementById("wordnetCite").addEventListener("click", wordnetCitation);
 
 generate();

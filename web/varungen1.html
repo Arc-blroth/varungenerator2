@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Varun Generator</title>
+	</head>
+	
+	
+	<body class="center">
+	
+		<style>
+			.center {
+				text-align: center;
+				margin: auto;
+			}
+			
+			body {
+				font-family: sans-serif;
+				background-color: #cef1ff;
+			}
+			
+			p {
+			
+			}
+			
+			button {
+				background-color: #76d4d4;
+				border-color: #8ddeff;
+				border-style: solid;
+				border-radius: 5px;
+				border-width: 5px;
+			}
+		</style>
+		
+		<h1>Varun Generator</h1>
+		<p id="output"></p>
+		<button id="genBtn">Generate Another!</button>
+		
+		<script>
+			let wellness = ["Wellness", "Peaceful", "Leisurely", "Tricky", "Stalwart", "Lively", "Vigorous", "Rickety"];
+			let walk = ["walk", "stroll", "trot", "saunter", "amble", "trek", "march", "roam", "tread"];
+				
+			document.getElementById("genBtn").addEventListener("click", function(){
+				generate();
+			});
+			
+			function generate() {
+				let r1 = Math.floor(Math.random() * wellness.length);
+				let r2 = Math.floor(Math.random() * walk.length);
+				document.getElementById("output").innerHTML = wellness[r1] + " " + walk[r2];
+			}
+			generate();
+		</script>
+	</body>
+</html>

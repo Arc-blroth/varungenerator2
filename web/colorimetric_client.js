@@ -20,7 +20,7 @@ function generate() {
 					document.getElementById("output").style.display = "inline";
 					document.getElementById("output").style.margin = "0px 8px 0px 0px";
 					if(resp == "wellness") {
-						var audio = new Audio('wellnessWalk.mp3');
+						var audio = new Audio('WellnessWalk.mp3');
 						audio.play();
 					}
 				}

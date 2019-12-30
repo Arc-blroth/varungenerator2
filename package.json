@@ -4,7 +4,8 @@
   "description": "A website that generates alliterative adjectives for nefarious nouns. Inspired by a teammate from Hermit Social Club.",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "varun2"
+version = "1.0.0"
+description = ""
+authors = ["Arc-blroth <45273859+Arc-blroth@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+nltk = "^3.4.5"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

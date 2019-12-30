@@ -14,7 +14,7 @@ for synset in wn.all_synsets(wn.ADJ):
     for lemma in synset.lemmas():
 	    key = lemma.name().lower()[0]
 	    if key in allTheAdjectives:
-		    allTheAdjectives[key].append(lemma.name())
+		    allTheAdjectives[key].append(lemma.name().replace("_", " "))
 		    adjCounter += 1
 
 # wellness is technically a noun

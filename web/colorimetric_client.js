@@ -11,7 +11,7 @@ function generate() {
 		if (this.readyState === 4) {
 			if (this.status >= 200 && this.status < 400) {
 				let resp = JSON.parse(this.responseText).out;
-				console.log("Recived \'" + resp + "\'");
+				console.log("Received \'" + resp + "\'");
 				document.getElementById("output").innerHTML = resp;
 				if(resp == "") {
 					document.getElementById("output").style.display = "none";
@@ -19,6 +19,10 @@ function generate() {
 				} else {
 					document.getElementById("output").style.display = "inline";
 					document.getElementById("output").style.margin = "0px 8px 0px 0px";
+					if(resp == "wellness") {
+						var audio = new Audio('wellnessWalk.mp3');
+						audio.play();
+					}
 				}
 			} else {
 				
@@ -43,3 +47,6 @@ document.getElementById("nltkCite").addEventListener("click", nltkCitation);
 document.getElementById("wordnetCite").addEventListener("click", wordnetCitation);
 
 generate();
+
+console.log(`%c Welcome to the console! `, `background-color: #cdf1ff; color: #246d5f; font-size: 2em;`);
+console.log(`%c Commands:\n    generate();\n`, `background-color: #cdf1ff; color: #246d5f; font-size: 1.2em;`);
